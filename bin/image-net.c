@@ -43,7 +43,7 @@ int main(int argc, char** argv)
 	char* base_dir = 0;
 	ccv_convnet_train_param_t train_params = {
 		.max_epoch = 100,
-		.mini_batch = 48,
+		.mini_batch = 64,
 		.sgd_frequency = 1, // do sgd every 2 batches (96 * 2 = 192)
 		.iterations = 50000,
 		.device_count = 4,
